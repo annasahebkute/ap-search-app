@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-      <footer className="bg-gray-200 text-center p-4 mt-auto">
-        <p>© 2025 My Website. All rights reserved.</p>
+      <footer className="text-center p-4 mt-auto text-sm subtitle opacity-70">
+        <p>© 2025. All rights reserved.</p>
       </footer>
     );
   }

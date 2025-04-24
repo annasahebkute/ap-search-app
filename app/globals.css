@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #323232;
 }
 
 @theme inline {
@@ -20,7 +20,45 @@
 }
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/bg-otwobg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ✅ Custom utilities using @layer if needed */
+@layer utilities {
+  .otitle {
+    /* color:#323232; */
+    background: linear-gradient(to right, #0A0530,  #4D5DCE, #436EE3);
+    background-clip: text;
+    color: transparent;
+  }
+  .osubtitle {
+    color: #585E85;
+  }
+  .border-o2{
+    border: 1px solid #E5E8EC; 
+  }
+  .aisearchinput{
+    background-color: #F8F8F8;
+  }
+  .o2AlignSearch-center{
+    height: calc(100vh - 174px);
+    margin: auto;
+    align-content: center;
+    width: 60%;
+  }
+  .o2AlignSearch-inner-center{
+    height: calc(100vh - 174px);
+    margin: auto;
+    align-content: center;
+    width: 60%;
+    justify-content: end;
+    display: flex;
+  }
+
 }
